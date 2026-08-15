@@ -1,0 +1,272 @@
+## Small Project Ideas
+
+### 1. Simple Calculator--  Done
+
+Features:
+
+* Take two numbers from user
+* Ask for operation (+, -, *, /)
+* Use `if-else` or `switch`
+
+Example:
+
+```text
+Enter first number: 10
+Enter second number: 5
+Enter operation: *
+Result = 50
+```
+
+---
+
+### 2. Even/Odd Checker -- Done
+
+Input a number and tell whether it is even or odd.
+
+Bonus:
+
+* Count how many even numbers exist from 1 to N.
+
+---
+
+### 3. Multiplication Table Generator --Done
+
+Input any number and print its table.
+
+Example:
+
+```text
+Enter number: 7
+
+7 x 1 = 7
+7 x 2 = 14
+...
+7 x 10 = 70
+```
+
+---
+
+### 4. Number Pattern Printer -- Done
+
+Use nested loops.
+
+Example:
+
+```text
+*
+**
+***
+****
+*****
+```
+
+Or:
+
+```text
+1
+12
+123
+1234
+12345
+```
+
+---
+
+### 5. Student Grade System -- Done
+
+Input marks.
+
+Output:
+
+```text
+91 -> Grade A
+82 -> Grade B
+74 -> Grade C
+```
+
+Use `if-else`.
+
+---
+
+### 6. Simple ATM Simulation -- Done
+
+Menu:
+
+```text
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+```
+
+Use loops and conditionals.
+
+(No functions needed yet.)
+
+---
+
+### 7. Password Checker -- Done
+
+Store a password:
+
+```c
+int password = 1234;
+```
+
+Give user 3 attempts.
+
+Output:
+
+```text
+Access Granted
+```
+
+or
+
+```text
+Access Denied
+```
+
+---
+
+### 8. Mini Quiz Game -- Done
+
+Ask 5 questions.
+
+Example:
+
+```text
+Capital of India?
+1. Mumbai
+2. Delhi
+3. Kolkata
+```
+
+Calculate score.
+
+---
+
+### 9. Sum of Digits  -- Done 
+
+Input:
+
+```text
+456
+```
+
+Output:
+
+```text
+15
+```
+
+(Hint: `%` and `/` operators.)
+
+---
+
+### 10. Reverse a Number -- Done
+
+Input:
+
+```text
+1234
+```
+
+Output:
+
+```text
+4321
+```
+
+This is an excellent loop exercise.
+
+---
+
+## Practice Questions (Without Solutions)
+
+### Easy -- done
+
+1. Print numbers from 1 to 100.
+2. Print only even numbers from 1 to 100.
+3. Print only odd numbers from 1 to 100.
+4. Find sum of numbers from 1 to N.
+5. Find square of a number.
+6. Convert Celsius to Fahrenheit.
+7. Find greatest of three numbers.
+8. Check whether a number is positive, negative, or zero.
+9. Check if a year is a leap year.
+10. Print first N multiples of 7.
+
+---
+
+### Medium -- done
+
+11. Count digits in a number.
+12. Reverse a number.
+13. Check whether a number is palindrome.
+
+Example:
+
+```text
+121 -> Palindrome
+123 -> Not Palindrome
+```
+
+14. Find factorial of a number.
+15. Find sum of digits.
+16. Find product of digits.
+17. Print all factors of a number.
+18. Check whether a number is prime.
+19. Print all prime numbers between 1 and N.
+20. Find largest digit in a number.
+
+---
+
+### Challenge Questions -- done
+
+21. Print this pattern:
+
+```text
+1
+22
+333
+4444
+55555
+```
+
+22. Print:
+
+```text
+*****
+****
+***
+**
+*
+```
+
+23. Guess-the-number game (without random numbers yet).
+
+Store:
+
+```c
+int secret = 42;
+```
+
+Keep asking until user guesses correctly.
+
+24. Calculate electricity bill:
+
+```text
+0-100 units => ₹5/unit
+101-200 => ₹7/unit
+Above 200 => ₹10/unit
+```
+
+25. Find whether a number is an Armstrong number.
+
+Example:
+
+```text
+153 = 1³ + 5³ + 3³
+```
+Done Done Done!!!!!!!
