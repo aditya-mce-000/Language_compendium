@@ -24,3 +24,5 @@
 -) Pointer
 
 -) Arrays
+
+-) Strings
