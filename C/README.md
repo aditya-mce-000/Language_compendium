@@ -26,3 +26,5 @@
 -) Arrays
 
 -) Strings
+
+-) Structures
