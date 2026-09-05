@@ -11,13 +11,9 @@ void compare(day d1, day d2);
 
 int main(void)
 {
-    day d1,d2;
-    d1.da = 12;
-    d1.month = 2;
-    d1.year = 2026;
-    d2.da = 8;
-    d2.month = 5;
-    d2.year = 2026;
+    // day d1,d2;
+    day d1 = {8, 5, 2026};
+    day d2 = {9,3, 2026};
 
     compare(d1,d2);
 
