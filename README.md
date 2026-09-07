@@ -6,3 +6,5 @@ A collection of programs created during syntax learning in different languages.
 1) C 
 
 2) Python
+
+3) HTML(Markup Language)
