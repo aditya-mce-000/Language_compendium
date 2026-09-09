@@ -3,12 +3,12 @@
 int main(void)
 {
     FILE *ptr;
-    ptr = fopen("harry.txt","r");
+    ptr = fopen("harry.txt","w");
 
-    char c = fgetc(ptr);
-    printf("%c\n",c);
+    // char c = fgetc(ptr);
+    // printf("%c\n",c);
 
-    // fputc('c',ptr);
+    fputc('a',ptr);
     return 0;
 
 }
