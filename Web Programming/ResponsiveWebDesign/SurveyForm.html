@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id = "title">My Github Survey Form</h1>
+    <p id = "description">You have to visit this link "<a href = "https://github.com/aditya-mce-000">https://github.com/aditya-mce-000</a>" and analyse all the repos and structure and then answer the survey questions.</p>
+
+    <form id = "survey-form">
+      <label id = "name-label">Name: </label>
+
+      <input id = "name" type = "text" placeholder = "XYZ ABC"required><br>
+      <label id = "email-label">Email: </label>
+
+
+      <input id = "email" type = "email" placeholder = "abcxyz@gmail.com" required><br>
+      <label id = "number-label" >id: </label>
+
+      <input id = "number" type = "number" max = "10" min = "1" placeholder = "1-10">
+      <br><br>
+      <label for = "dropdown"><h4>How was your experience?</h4></label>
+      <select id = "dropdown">
+        <option>Bad</option>
+        <option selected>Good</option>
+        <option>Excellent</option>
+      </select>
+
+      <p><h4>Did you learn anything?</h4></p>
+      <input id = "yes" type = "radio" name = "yes" value = "yes">
+      <label for = "yes">Yes</label>
+      <input id = "no" value = "no" type = "radio" name = "no">
+      <label for = "no">No</label>
+
+      <p><h5>Select All that apply: </h5></p>
+      <input type ="checkbox" name = "follow" id = "follow" value = "follow">
+      <label for = "follow">Would you follow?</label>
+      <input type ="checkbox" name = "Learn with me" id = "learn" value = "learn">
+      <label for = "learn">Would you learn with me?</label>
+
+      <br>
+
+      <!-- <p><h4>Which is your favourite part?</h4></p>
+      <input id = "comment" placeholder = "Enter Comment"> -->
+      <br>
+
+      <label id = "user-feedback"><h4>Which was your favourite part?<h4></label><br>
+      <textarea id="user-feedback" name="feedback" rows="4" cols="50">Comment Here.
+</textarea><br><br>
+
+      <button id = "submit">Submit</button>
+    </form>
+  </body>
+</html>
