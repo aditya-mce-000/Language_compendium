@@ -15,5 +15,6 @@ int main(void)
             break;
         }
     }
+    fclose(ptr);
     return 0;
 }

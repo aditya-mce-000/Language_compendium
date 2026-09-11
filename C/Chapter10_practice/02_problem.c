@@ -3,13 +3,12 @@
 int main()
 {
     FILE *ptr;
-    ptr = fopen("Adi.txt","r");
-    int num;
-    f scanf(ptr,"%d", &num);
-
-    for (int i = 1; i < 11; i++)
+    ptr = fopen("table.txt", "w");
+    
+    for (int i = 0; i < 10; i++)
     {
-        printf("%dX%d=%d\n", num, i, num*i);
+        fprintf(ptr,"%d",4*(i+1));
+        fprintf(ptr, "%c", '\n');
     }
     return 0;
 }

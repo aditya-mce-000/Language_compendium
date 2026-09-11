@@ -9,6 +9,6 @@ int main(void)
     // printf("%c\n",c);
 
     fputc('a',ptr);
+    fclose(ptr);
     return 0;
-
 }

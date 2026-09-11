@@ -12,5 +12,6 @@ int main(void)
         count++;
         printf("%d\n", num);
     }
+    fclose(ptr);
     return 0;
 }
