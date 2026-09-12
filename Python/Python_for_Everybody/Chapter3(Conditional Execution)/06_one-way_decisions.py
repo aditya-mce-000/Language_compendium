@@ -1,0 +1,12 @@
+x = 5
+print('Before 5')
+if x == 5:
+    print("is 5")
+    print("is still 5")
+    print("Third 5")
+print("After 5")
+print("before 6")
+if x == 6:
+    print("is 6")
+    print("is still 6")
+print("done")
