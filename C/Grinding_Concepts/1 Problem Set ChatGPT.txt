@@ -1,5 +1,3 @@
-## Small Project Ideas
-
 ### 1. Simple Calculator--  Done
 
 Features:
