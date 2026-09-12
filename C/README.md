@@ -28,3 +28,13 @@
 -) Strings
 
 -) Structures
+
+-) File I/O
+
+-) Dynamic Memory Allocation
+
+  #  Projects
+
+-) Number Guessing Game
+
+-) Snake, Water, Gun
