@@ -1,0 +1,1399 @@
+C PROGRAMMING — LEVEL-UP PROBLEM SET
+=========================================
+Based on: The Ultimate C Handbook
+
+IMPORTANT
+---------
+This is a fully specified problem set. Each question includes the actual
+expressions, values, input format, examples, or exact requirements needed
+to solve it.
+
+Do NOT look for the solution in the question. The goal is for you to write
+the C programs yourself.
+
+============================================================
+LEVEL 1 — CORE CONCEPTS + OPERATORS
+============================================================
+
+1. EXPRESSION DETECTIVE
+-----------------------
+Predict the output of EACH program before running it.
+
+A)
+    int a = 10, b = 3;
+    printf("%d\n", a + b * 2);
+
+B)
+    int a = 10, b = 3;
+    printf("%d\n", (a + b) * 2);
+
+C)
+    int a = 10, b = 3;
+    printf("%d\n", a / b);
+
+D)
+    int a = 10;
+    float b = 3;
+    printf("%.2f\n", a / b);
+
+E)
+    int a = 5, b = 2;
+    printf("%d\n", a > 3 && b < 5);
+
+F)
+    int a = 5, b = 10;
+    printf("%d\n", a == 5 || b == 5);
+
+G)
+    int x = 5;
+    printf("%d\n", x++ + ++x);
+
+For every expression, explain:
+- operator precedence
+- associativity where relevant
+- integer division
+- type conversion
+- whether the expression is well-defined C
+
+2. TYPE CONVERSION CHALLENGE
+----------------------------
+Write a program that asks for two integers a and b.
+
+Example input:
+    10 3
+
+Print:
+    Integer division: 3
+    Floating division: 3.333333
+    Explicit cast result: 3.333333
+
+Then repeat the calculation using:
+    float x = a;
+    float y = b;
+
+Explain why the results differ.
+
+3. NUMBER CLASSIFIER
+--------------------
+Input one integer N.
+
+Example:
+    Input: -30
+
+Output:
+    Sign: Negative
+    Even/Odd: Even
+    Divisible by 3: Yes
+    Divisible by 5: Yes
+
+Test at least:
+    0
+    7
+    -15
+    24
+
+4. PRECEDENCE PUZZLE
+--------------------
+Predict the output of these:
+
+A)
+    int x = 5 + 3 * 2;
+
+B)
+    int x = (5 + 3) * 2;
+
+C)
+    int x = 20 / 5 * 2;
+
+D)
+    int x = 10 > 5 && 3 < 2;
+
+E)
+    int x = 10 > 5 || 3 < 2;
+
+F)
+    int x = 5 + 2 > 6;
+
+G)
+    int x = 5 * 2 == 10;
+
+Write a program that prints all seven results.
+
+============================================================
+LEVEL 2 — LOGIC + LOOPS
+============================================================
+
+5. NUMBER STATISTICS
+--------------------
+Input a positive integer.
+
+Example:
+    Input: 58321
+
+Output:
+    Digits: 5
+    Sum: 19
+    Product: 240
+    Largest digit: 8
+    Smallest digit: 1
+    Even digits: 2
+    Odd digits: 3
+
+Do not convert the number into a string.
+
+6. SECOND LARGEST DIGIT
+-----------------------
+Input a positive integer.
+
+Example:
+    Input: 58321
+    Output: Second largest digit = 5
+
+Example:
+    Input: 9988
+    Output: Second largest distinct digit = 8
+
+If there is no second-largest distinct digit, print:
+    No second-largest distinct digit
+
+7. NUMBER PROPERTY ANALYZER
+---------------------------
+Input an integer N and check:
+
+- Is it a palindrome?
+- Is it prime?
+- Is it a perfect square?
+- Is it an Armstrong number?
+- Is it divisible by the sum of its digits?
+
+Example:
+    Input: 121
+
+Possible output:
+    Palindrome: Yes
+    Prime: No
+    Perfect square: Yes
+    Armstrong: No
+    Divisible by digit sum: Yes
+
+8. DIGITAL ROOT — LOOP + RECURSION
+----------------------------------
+Input:
+    9875
+
+First calculate the digital root using loops.
+
+Example:
+    9 + 8 + 7 + 5 = 29
+    2 + 9 = 11
+    1 + 1 = 2
+
+Output:
+    Digital root using loop: 2
+    Digital root using recursion: 2
+
+Write two separate functions:
+    int digitalRootLoop(int n)
+    int digitalRootRecursive(int n)
+
+9. PRIME PAIR SEARCH
+--------------------
+Input an even integer N.
+
+Find all pairs of prime numbers p and q such that:
+    p + q = N
+
+Example:
+    Input: 10
+
+Output:
+    3 + 7 = 10
+    5 + 5 = 10
+
+Do not print duplicate reversed pairs such as:
+    7 + 3 = 10
+
+10. MULTIPLICATION TABLE MATRIX
+------------------------------
+Input N.
+
+For N = 5, print multiplication tables from 1 to 5 in aligned columns.
+
+Example format:
+
+    1x1=1    2x1=2    3x1=3    4x1=4    5x1=5
+    1x2=2    2x2=4    3x2=6    4x2=8    5x2=10
+    ...
+    1x10=10  2x10=20  3x10=30  4x10=40  5x10=50
+
+Use nested loops.
+
+============================================================
+LEVEL 3 — FUNCTIONS + RECURSION
+============================================================
+
+11. FUNCTION CALCULATOR
+-----------------------
+Create these functions:
+
+    int add(int a, int b)
+    int subtract(int a, int b)
+    int multiply(int a, int b)
+    float divide(int a, int b)
+    int remainder(int a, int b)
+
+Create a menu:
+
+    1. Add
+    2. Subtract
+    3. Multiply
+    4. Divide
+    5. Remainder
+    6. Exit
+
+Handle division by zero.
+
+12. NUMBER UTILITY LIBRARY
+--------------------------
+Create functions:
+
+    int countDigits(int n)
+    int sumDigits(int n)
+    int reverseNumber(int n)
+    int isPalindrome(int n)
+    int isPrime(int n)
+    int largestDigit(int n)
+
+Ask the user for one number and display all results using these functions.
+
+Example:
+    Input: 121
+
+Output:
+    Digits: 3
+    Sum: 4
+    Reverse: 121
+    Palindrome: Yes
+    Prime: No
+    Largest digit: 2
+
+13. RECURSIVE POWER
+-------------------
+Write:
+
+    int power(int base, int exponent)
+
+using recursion.
+
+Example:
+    Input: 2 5
+    Output: 32
+
+Do not use pow().
+
+14. RECURSIVE REVERSE
+---------------------
+Write a recursive function to reverse a number.
+
+Example:
+    Input: 12345
+    Output: 54321
+
+Do not convert the number to a string.
+
+15. RECURSIVE PATTERNS
+----------------------
+Create three different patterns using recursion.
+
+Pattern 1, N = 5:
+    *
+    **
+    ***
+    ****
+    *****
+
+Pattern 2, N = 5:
+    *****
+    ****
+    ***
+    **
+    *
+
+Pattern 3, N = 5:
+    1
+    12
+    123
+    1234
+    12345
+
+You may create helper functions.
+
+16. RECURSIVE GCD
+-----------------
+Write:
+
+    int gcd(int a, int b)
+
+using the recursive Euclidean algorithm.
+
+Example:
+    Input: 48 18
+    Output: GCD = 6
+
+Also test:
+    100 25
+    17 13
+    0 5
+
+============================================================
+LEVEL 4 — POINTERS
+============================================================
+
+17. POINTER INSPECTOR
+---------------------
+Create:
+
+    int x = 10;
+    float y = 5.5;
+    char c = 'A';
+
+Create pointers to each variable.
+
+Print:
+- value of each variable
+- address of each variable
+- value obtained by dereferencing its pointer
+
+Then modify all three variables using their pointers.
+
+18. SWAP + ROTATE
+-----------------
+Create:
+
+    void swap(int *a, int *b)
+
+Then create:
+
+    void rotate(int *a, int *b, int *c)
+
+For:
+    a = 10
+    b = 20
+    c = 30
+
+After rotation:
+    a = 30
+    b = 10
+    c = 20
+
+Use pointers. Do not return a structure or array.
+
+19. MULTIPLE OUTPUTS THROUGH POINTERS
+-------------------------------------
+Create:
+
+    void analyze(int n, int *square, int *cube, float *half, int *doubleValue)
+
+Example:
+    Input: 5
+
+Output:
+    Square: 25
+    Cube: 125
+    Half: 2.50
+    Double: 10
+
+All four results must be produced through pointer parameters.
+
+20. POINTER-BASED NUMBER ANALYZER
+---------------------------------
+Write:
+
+    void analyzeNumber(int n, int *digits, int *sum,
+                       int *largest, int *smallest)
+
+For:
+    Input: 58321
+
+Output:
+    Digits: 5
+    Sum: 19
+    Largest: 8
+    Smallest: 1
+
+The function must modify the results through pointers.
+
+21. POINTER-TO-POINTER CHALLENGE
+--------------------------------
+Create:
+
+    int x = 10;
+    int *p = &x;
+    int **pp = &p;
+
+Perform these operations:
+
+1. Print x.
+2. Print *p.
+3. Print **pp.
+4. Change x to 50 using *p.
+5. Change x to 100 using **pp.
+
+Then explain the difference between:
+    x
+    *p
+    **pp
+
+============================================================
+LEVEL 5 — ARRAYS + POINTERS + MATRICES
+============================================================
+
+22. ARRAY STATISTICS
+--------------------
+Input N followed by N integers.
+
+Example:
+    Input:
+    6
+    10 5 8 3 12 7
+
+Output:
+    Sum: 45
+    Average: 7.50
+    Maximum: 12
+    Minimum: 3
+    Even count: 4
+    Odd count: 2
+
+23. REVERSE ARRAY IN-PLACE
+--------------------------
+Input:
+    6
+    10 20 30 40 50 60
+
+Output:
+    60 50 40 30 20 10
+
+Use pointer arithmetic.
+
+Rules:
+- Do not create a second array.
+- Do not use another array to store the answer.
+
+24. SECOND-LARGEST ARRAY ELEMENT
+--------------------------------
+Input:
+    7
+    10 40 20 40 30 50 50
+
+Output:
+    Second largest distinct element: 40
+
+If all elements are equal:
+    No second-largest distinct element
+
+25. REMOVE DUPLICATES
+---------------------
+Input:
+    10
+    4 2 4 5 2 3 5 1 4 3
+
+Output:
+    4 2 5 3 1
+
+Keep the first occurrence of every number.
+
+You may use the same array and shift elements.
+
+26. ARRAY ROTATION
+------------------
+Input:
+    N = 6
+    Array = 10 20 30 40 50 60
+    K = 2
+
+Left rotation:
+    30 40 50 60 10 20
+
+Right rotation:
+    50 60 10 20 30 40
+
+Write both operations as separate functions.
+
+27. 3x3 MATRIX OPERATIONS
+-------------------------
+Input two 3x3 matrices.
+
+Matrix A:
+    1 2 3
+    4 5 6
+    7 8 9
+
+Matrix B:
+    9 8 7
+    6 5 4
+    3 2 1
+
+Calculate:
+- A + B
+- A - B
+- A x B
+- transpose of A
+
+Display every result as a matrix.
+
+28. MATRIX ANALYZER
+-------------------
+Input a square matrix.
+
+Example:
+    3
+    1 2 3
+    4 5 6
+    7 8 9
+
+Calculate:
+- main diagonal sum
+- secondary diagonal sum
+- every row sum
+- every column sum
+
+Then determine whether the matrix is symmetric.
+
+For example:
+    1 2 3
+    2 5 6
+    3 6 9
+
+is symmetric.
+
+============================================================
+LEVEL 6 — STRINGS
+============================================================
+
+29. STRING STATISTICS
+---------------------
+Input a line of text.
+
+Example:
+    Hello World 123!
+
+Count:
+- uppercase letters
+- lowercase letters
+- digits
+- spaces
+- special characters
+- vowels
+- consonants
+
+Example output:
+    Uppercase: 2
+    Lowercase: 8
+    Digits: 3
+    Spaces: 1
+    Special: 1
+    Vowels: 3
+    Consonants: 7
+
+30. REVERSE A STRING WITHOUT strrev()
+-------------------------------------
+Input:
+    programming
+
+Output:
+    gnimmargorp
+
+Do not use strrev().
+
+Try solving it:
+1. Using array indexing.
+2. Using pointers.
+
+31. STRING PALINDROME
+---------------------
+Input a line of text.
+
+Example:
+    madam
+
+Output:
+    Palindrome: Yes
+
+Example:
+    hello
+
+Output:
+    Palindrome: No
+
+For the basic version, compare characters exactly as entered.
+
+32. YOUR OWN STRING LIBRARY
+---------------------------
+Implement your own versions of:
+
+    my_strlen()
+    my_strcpy()
+    my_strcat()
+    my_strcmp()
+
+Do not call the corresponding functions from <string.h> inside your
+implementations.
+
+Test them with strings such as:
+
+    "Hello"
+    "World"
+    "Programming"
+
+33. WORD COUNTER
+----------------
+Input a sentence.
+
+Example:
+    C programming is very fun
+
+Output:
+    Number of words: 5
+
+Also test:
+
+    "C   programming    is fun"
+
+The answer should still be 4.
+
+34. CHARACTER FREQUENCY ANALYZER
+--------------------------------
+Input:
+
+    programming
+
+Count the frequency of every character.
+
+Example format:
+    p = 1
+    r = 2
+    o = 1
+    g = 2
+    ...
+
+Then print the most frequent character(s).
+
+Ignore spaces when calculating the frequency.
+
+============================================================
+LEVEL 7 — STRUCTURES + TYPEDEF
+============================================================
+
+35. STUDENT DATABASE
+--------------------
+Create:
+
+    struct Student
+    {
+        char name[50];
+        int roll;
+        float marks;
+    };
+
+Input N students.
+
+Example:
+    3
+
+    Alice 101 85.5
+    Bob   102 91.0
+    Charlie 103 78.5
+
+Display:
+- all students
+- highest scorer
+- average marks
+
+36. EMPLOYEE MANAGEMENT
+-----------------------
+Create:
+
+    struct Employee
+    {
+        char name[50];
+        int id;
+        float salary;
+        char department[30];
+    };
+
+Create functions to:
+- input employees
+- display employees
+- find employee with highest salary
+- search employee by ID
+
+Example search:
+    Enter ID: 102
+
+Display that employee if found.
+
+37. COMPLEX NUMBER CALCULATOR
+-----------------------------
+Create:
+
+    typedef struct
+    {
+        float real;
+        float imag;
+    } Complex;
+
+Create functions for:
+- addition
+- subtraction
+- multiplication
+- display
+
+Example:
+    A = 2 + 3i
+    B = 4 + 5i
+
+Calculate:
+    A + B
+    A - B
+    A * B
+
+38. DATE VALIDATOR + COMPARATOR
+-------------------------------
+Create:
+
+    typedef struct
+    {
+        int day;
+        int month;
+        int year;
+    } Date;
+
+Write functions to:
+- check whether a date is valid
+- determine leap years
+- compare two dates
+
+Examples:
+
+    29/02/2024 -> Valid
+    29/02/2023 -> Invalid
+    31/04/2025 -> Invalid
+
+For two valid dates, report:
+    Date 1 is earlier
+    Date 2 is earlier
+    Dates are equal
+
+============================================================
+LEVEL 8 — FILE I/O
+============================================================
+
+39. FILE STATISTICS
+-------------------
+Create a text file containing several lines of text.
+
+Example file:
+
+    Hello world
+    C programming is fun.
+    12345
+
+Read the file and calculate:
+- total characters
+- total lines
+- total words
+- total digits
+
+Use:
+    FILE *
+    fopen()
+    fgetc()
+    EOF
+    fclose()
+
+40. FILE COPY PROGRAM
+---------------------
+Ask the user for:
+    source filename
+    destination filename
+
+Copy every character from the source file to the destination file.
+
+Use:
+    fgetc()
+    fputc()
+    EOF
+
+Check whether the files opened successfully.
+
+41. NUMBER FILE ANALYZER
+------------------------
+Create a file containing integers, for example:
+
+    10 5 7 20 3 11 50 2
+
+Read all integers and calculate:
+- count
+- sum
+- average
+- largest
+- smallest
+- number of prime numbers
+
+42. PERSISTENT STUDENT RECORDS
+------------------------------
+Create a student record program that stores data in a file.
+
+Student fields:
+- name
+- roll
+- marks
+
+Menu:
+
+    1. Add student
+    2. Display students
+    3. Search student
+    4. Update student
+    5. Exit
+
+When the program is closed and opened again, previously saved records
+should still be available.
+
+============================================================
+LEVEL 9 — DYNAMIC MEMORY ALLOCATION
+============================================================
+
+43. DYNAMIC ARRAY STATISTICS
+----------------------------
+Input:
+    N
+
+Use malloc() to allocate space for N integers.
+
+Example:
+    N = 5
+    Values = 10 20 5 40 25
+
+Calculate:
+    Sum
+    Average
+    Maximum
+    Minimum
+
+Finally call free().
+
+44. REALLOC EXPANSION CHALLENGE
+-------------------------------
+Use malloc() to allocate an array for 5 integers.
+
+Example:
+    First 5:
+    1 2 3 4 5
+
+Then use realloc() to expand the array to 10 integers.
+
+Enter 5 more:
+    6 7 8 9 10
+
+Output:
+    1 2 3 4 5 6 7 8 9 10
+
+Do not create a second permanent array for the expanded data.
+
+45. DYNAMIC MULTIPLICATION TABLE
+--------------------------------
+Ask:
+
+    Enter rows:
+    Enter columns:
+
+Dynamically allocate memory for a multiplication table.
+
+Example:
+    rows = 3
+    columns = 4
+
+Output:
+    1 2 3 4
+    2 4 6 8
+    3 6 9 12
+
+Free all allocated memory.
+
+============================================================
+LEVEL 10 — BIG APPLICATIONS
+============================================================
+
+46. STUDENT MANAGEMENT SYSTEM
+-----------------------------
+Build a complete console application.
+
+Student:
+- name
+- roll number
+- marks
+
+Features:
+    1. Add student
+    2. List students
+    3. Search student
+    4. Update student
+    5. Delete student
+    6. Average marks
+    7. Highest scorer
+    8. Save to file
+    9. Load from file
+    10. Exit
+
+Requirements:
+- structures
+- arrays
+- functions
+- pointers
+- strings
+- file I/O
+- dynamic memory where useful
+- switch menu
+
+47. MINI BANKING SYSTEM
+-----------------------
+Create a console banking application.
+
+Account fields:
+- account number
+- customer name
+- balance
+
+Menu:
+    1. Create account
+    2. Deposit
+    3. Withdraw
+    4. Check balance
+    5. Search account
+    6. Display all accounts
+    7. Save accounts
+    8. Exit
+
+Rules:
+- Do not allow withdrawal greater than the balance.
+- Do not allow negative deposits.
+- Account numbers should identify accounts uniquely.
+
+48. CONTACT BOOK
+----------------
+Create a contact book.
+
+Each contact:
+- name
+- phone number
+- email
+
+Menu:
+    1. Add contact
+    2. Search contact
+    3. Edit contact
+    4. Delete contact
+    5. Display all contacts
+    6. Save contacts
+    7. Load contacts
+    8. Exit
+
+Search by name.
+
+49. MINI TEXT ANALYZER
+----------------------
+Read a text file and calculate:
+
+- total characters
+- total words
+- total lines
+- vowels
+- consonants
+- digits
+- spaces
+- most frequent character
+- longest word
+
+Example file:
+
+    C is powerful.
+    C is fast.
+    I like programming.
+
+Print a clean report containing all statistics.
+
+50. COMMAND-LINE GRADEBOOK
+--------------------------
+Create a gradebook using structures, functions, arrays, strings, and files.
+
+Each student has:
+- name
+- roll number
+- marks in 3 subjects
+
+For each student calculate:
+    total
+    average
+    grade
+
+Example grading system:
+    90+  -> A
+    80-89 -> B
+    70-79 -> C
+    60-69 -> D
+    below 60 -> F
+
+Features:
+    1. Add student
+    2. Display students
+    3. Search student
+    4. Calculate grades
+    5. Highest scorer
+    6. Lowest scorer
+    7. Save
+    8. Load
+    9. Exit
+
+============================================================
+BONUS — SMALL GAMES
+============================================================
+
+51. DELUXE NUMBER GUESSING GAME
+-------------------------------
+The computer chooses a random number.
+
+Give the player difficulty levels:
+
+    Easy:
+        1-50
+        10 attempts
+
+    Medium:
+        1-100
+        7 attempts
+
+    Hard:
+        1-500
+        8 attempts
+
+After every incorrect guess, say:
+    Too high
+or
+    Too low
+
+Add:
+- score
+- attempt counter
+- replay option
+
+52. TWO-PLAYER TIC-TAC-TOE
+---------------------------
+Create a 3x3 board:
+
+    1 | 2 | 3
+    --+---+--
+    4 | 5 | 6
+    --+---+--
+    7 | 8 | 9
+
+Player 1 uses X.
+Player 2 uses O.
+
+Players enter a number from 1-9 to place their symbol.
+
+Requirements:
+- display board after every move
+- reject occupied positions
+- detect 3-in-a-row
+- detect draw
+- alternate turns
+- replay option
+
+53. UPGRADED QUIZ GAME
+----------------------
+Create a quiz game with at least 10 questions.
+
+Example question:
+
+    Which symbol is used to get the address of a variable?
+
+    1. *
+    2. &
+    3. %
+    4. #
+
+Store the player's score.
+
+At the end display:
+    Correct answers
+    Wrong answers
+    Final score
+
+Add a replay option.
+
+============================================================
+FINAL BOSS — PERSONAL CONSOLE HUB
+============================================================
+
+54. PERSONAL CONSOLE HUB
+------------------------
+Create ONE large C program with this main menu:
+
+    ==============================
+       PERSONAL CONSOLE HUB
+    ==============================
+
+    1. Calculator
+    2. Number Analyzer
+    3. Student Manager
+    4. Contact Book
+    5. Quiz Game
+    6. Tic-Tac-Toe
+    7. File Analyzer
+    8. Exit
+
+MODULE 1 — CALCULATOR
+---------------------
+Support:
+- addition
+- subtraction
+- multiplication
+- division
+- remainder
+
+MODULE 2 — NUMBER ANALYZER
+---------------------------
+Given a number, display:
+- digit count
+- digit sum
+- reverse
+- palindrome status
+- prime status
+- largest digit
+- smallest digit
+
+MODULE 3 — STUDENT MANAGER
+---------------------------
+Support:
+- add
+- display
+- search
+- update
+- delete
+- highest scorer
+- average
+- save/load
+
+MODULE 4 — CONTACT BOOK
+-----------------------
+Support:
+- add
+- search
+- edit
+- delete
+- display
+- save/load
+
+MODULE 5 — QUIZ
+----------------
+At least 10 questions.
+Track the score.
+
+MODULE 6 — TIC-TAC-TOE
+----------------------
+2-player 3x3 game.
+
+MODULE 7 — FILE ANALYZER
+------------------------
+Ask for a filename and report:
+- characters
+- words
+- lines
+- digits
+- most frequent character
+
+REQUIREMENTS
+------------
+The final program should demonstrate:
+- variables and constants
+- operators
+- if/else
+- switch
+- loops
+- break/continue
+- functions
+- function prototypes
+- recursion where useful
+- pointers
+- pointer-to-pointer
+- arrays
+- pointer arithmetic
+- 2-D arrays
+- strings
+- string functions
+- structures
+- arrays of structures
+- pointers to structures
+- arrow operator
+- typedef
+- file I/O
+- FILE pointers
+- fgetc/fputc/EOF
+- malloc
+- calloc
+- realloc
+- free
+
+IMPORTANT:
+Do not put everything inside main().
+Break the project into sensible functions.
+
+============================================================
+RECOMMENDED SOLVING ORDER
+============================================================
+
+START HERE:
+    5
+    6
+    7
+    8
+    11
+    12
+    16
+    18
+    23
+    25
+    27
+    30
+    32
+    35
+    38
+    40
+    44
+
+THEN:
+    46
+    47
+    48
+    49
+
+FINAL CHALLENGE:
+Choose one of:
+    50
+    52
+    54
+
+============================================================
+CHALLENGE RULE
+============================================================
+
+For difficult problems, try to solve them yourself first.
+
+If you get stuck, bring:
+    1. Your approach
+    2. Your code
+    3. The error/output
+    4. What you expected
+
+Then work through the problem step by step.
+
+============================================================
+HANDBOOK TOPIC COVERAGE
+============================================================
+
+This problem set revisits the major topics from the handbook:
+
+CHAPTER 1
+- Variables
+- Constants
+- Keywords
+
+CHAPTERS 2–3
+- Operators
+- Relational operators
+- Logical operators
+- if/else
+- else-if
+- Operator precedence
+- Conditional operator
+- switch
+
+CHAPTER 4
+- while
+- do-while
+- for
+- decrementing loops
+- break
+- continue
+- number guessing game
+
+CHAPTER 5
+- Functions
+- Prototypes
+- Function calls
+- Function definitions
+- Passing values
+- Recursion
+
+CHAPTER 6
+- Pointers
+- &
+- *
+- Pointer declarations
+- Pointer-to-pointer
+- Call by value/reference
+
+CHAPTER 7
+- Arrays
+- Array memory
+- Pointer arithmetic
+- Arrays through pointers
+- Passing arrays to functions
+- Multidimensional arrays
+- 2-D arrays
+
+CHAPTER 8
+- Strings
+- String input/output
+- String pointers
+- strlen
+- strcpy
+- strcat
+- strcmp
+- Own string functions
+- String analysis
+
+CHAPTER 9
+- Structures
+- Arrays of structures
+- Structure initialization
+- Structure memory
+- Pointer to structure
+- Arrow operator
+- Passing structures to functions
+- typedef
+
+CHAPTER 10
+- File I/O
+- FILE pointers
+- r/rb/w/wb/a modes
+- Text files
+- Binary-file concepts
+- Reading/writing files
+- fclose
+- fgetc
+- fputc
+- EOF
+
+CHAPTER 11
+- malloc
+- calloc
+- realloc
+- free
+- Dynamic arrays
+
+============================================================
+END
+============================================================
