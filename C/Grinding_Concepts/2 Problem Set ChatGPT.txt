@@ -15,38 +15,38 @@ the C programs yourself.
 LEVEL 1 — CORE CONCEPTS + OPERATORS
 ============================================================
 
-1. EXPRESSION DETECTIVE
+1. EXPRESSION DETECTIVE--done
 -----------------------
 Predict the output of EACH program before running it.
 
 A)
     int a = 10, b = 3;
-    printf("%d\n", a + b * 2);
+    printf("%d\n", a + b * 2);//10+3*2 = 16(operator precedence)
 
 B)
     int a = 10, b = 3;
-    printf("%d\n", (a + b) * 2);
+    printf("%d\n", (a + b) * 2);//26
 
 C)
     int a = 10, b = 3;
-    printf("%d\n", a / b);
+    printf("%d\n", a / b);//3
 
 D)
     int a = 10;
     float b = 3;
-    printf("%.2f\n", a / b);
+    printf("%.2f\n", a / b);//3.33
 
 E)
     int a = 5, b = 2;
-    printf("%d\n", a > 3 && b < 5);
+    printf("%d\n", a > 3 && b < 5);//1
 
 F)
     int a = 5, b = 10;
-    printf("%d\n", a == 5 || b == 5);
+    printf("%d\n", a == 5 || b == 5);//0
 
 G)
     int x = 5;
-    printf("%d\n", x++ + ++x);
+    printf("%d\n", x++ + ++x);//11
 
 For every expression, explain:
 - operator precedence
@@ -55,7 +55,7 @@ For every expression, explain:
 - type conversion
 - whether the expression is well-defined C
 
-2. TYPE CONVERSION CHALLENGE
+2. TYPE CONVERSION CHALLENGE--done
 ----------------------------
 Write a program that asks for two integers a and b.
 
@@ -73,7 +73,7 @@ Then repeat the calculation using:
 
 Explain why the results differ.
 
-3. NUMBER CLASSIFIER
+3. NUMBER CLASSIFIER--done
 --------------------
 Input one integer N.
 
@@ -92,30 +92,30 @@ Test at least:
     -15
     24
 
-4. PRECEDENCE PUZZLE
+4. PRECEDENCE PUZZLE --done
 --------------------
 Predict the output of these:
 
 A)
-    int x = 5 + 3 * 2;
+    int x = 5 + 3 * 2;// 11
 
 B)
-    int x = (5 + 3) * 2;
+    int x = (5 + 3) * 2;// 16
 
 C)
-    int x = 20 / 5 * 2;
+    int x = 20 / 5 * 2;//8
 
 D)
-    int x = 10 > 5 && 3 < 2;
+    int x = 10 > 5 && 3 < 2; // 0
 
 E)
-    int x = 10 > 5 || 3 < 2;
+    int x = 10 > 5 || 3 < 2; // 1
 
 F)
-    int x = 5 + 2 > 6;
+    int x = 5 + 2 > 6;// 1
 
 G)
-    int x = 5 * 2 == 10;
+    int x = 5 * 2 == 10; // 1
 
 Write a program that prints all seven results.
 
@@ -123,7 +123,7 @@ Write a program that prints all seven results.
 LEVEL 2 — LOGIC + LOOPS
 ============================================================
 
-5. NUMBER STATISTICS
+5. NUMBER STATISTICS--Done
 --------------------
 Input a positive integer.
 
