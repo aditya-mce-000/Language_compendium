@@ -12,3 +12,11 @@
 
 // If there is no second-largest distinct digit, print:
 //     No second-largest distinct digit
+
+#include <stdio.h>
+
+int main(void)
+{
+    
+    return 0;
+}
