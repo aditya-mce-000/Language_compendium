@@ -17,6 +17,23 @@
 
 int main(void)
 {
+    int dig[123];
+    int n;
+    printf("Input: ");
+    scanf("%d", &n);
+    int temp = n;
+    int count = 0;
+    int i = 0;
+    do
+    {
+        count++;
+        dig[i] = temp % 10;
+        temp = temp / 10;
+        i++;
+        count++;
+    } while (temp > 0);
+
     
+    printf("The second largest digit of the ")
     return 0;
 }
