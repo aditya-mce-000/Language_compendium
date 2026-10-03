@@ -1,4 +1,4 @@
-astr = 'Hello Bob'
+astr = input("Enter the num: ")
 try:
     iatr = int(astr)
 except:
