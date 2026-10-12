@@ -15,25 +15,41 @@
 
 #include <stdio.h>
 
-int main(void)
-{
-    int dig[123];
-    int n;
-    printf("Input: ");
-    scanf("%d", &n);
-    int temp = n;
-    int count = 0;
-    int i = 0;
-    do
-    {
-        count++;
-        dig[i] = temp % 10;
-        temp = temp / 10;
-        i++;
-        count++;
-    } while (temp > 0);
-
+int main(void){
+    int num;
+    printf("Enter the number: ");
+    scanf("%d", &num);
     
-    printf("The second largest digit of the ")
+    int temp1 = num;
+    int larg = 0;
+    int digit;
+    while (temp1 > 0){
+        digit = temp1 % 10;
+        temp1 = temp1 / 10;
+        if (digit > larg){
+            larg = digit;
+        }
+    }
+    printf("Largest number = %d\n", larg);
+    int temp2 = num;
+    int larg2 = 0;
+    int diff = 19;
+    int diff2;
+    while (temp2 > 0){
+        digit = temp2 % 10;
+        temp2 = temp2 / 10;
+        diff2 = larg - digit;
+        if ((diff2 != 0) && (diff2 < diff)){
+            diff = diff2;
+            larg2 = digit;
+        }
+    }
+
+    if (diff == 19){
+        printf("No Second Largest");
+    }
+    else{
+        printf("Second Largest number = %d\n", larg2);
+    }
     return 0;
 }

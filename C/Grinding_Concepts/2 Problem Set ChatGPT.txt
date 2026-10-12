@@ -141,7 +141,7 @@ Output:
 
 Do not convert the number into a string.
 
-6. SECOND LARGEST DIGIT
+6. SECOND LARGEST DIGIT -- Done
 -----------------------
 Input a positive integer.
 
