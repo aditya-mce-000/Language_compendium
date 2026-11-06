@@ -11,45 +11,52 @@
 //     Output: Second largest distinct digit = 8
 
 // If there is no second-largest distinct digit, print:
-//     No second-largest distinct digit
+//     No second-largest distinct digit 
 
-#include <stdio.h>
+#include<stdio.h>
 
-int main(void){
-    int num;
-    printf("Enter the number: ");
-    scanf("%d", &num);
-    
-    int temp1 = num;
-    int larg = 0;
-    int digit;
-    while (temp1 > 0){
-        digit = temp1 % 10;
-        temp1 = temp1 / 10;
-        if (digit > larg){
-            larg = digit;
+int max_digit(int n){
+    int max = 0;
+    // int temp = n;
+    while (n > 0){
+        int x = n % 10;
+        n = n / 10;
+        if (x > max){
+            max = x;
         }
-    }
-    printf("Largest number = %d\n", larg);
-    int temp2 = num;
-    int larg2 = 0;
-    int diff = 19;
-    int diff2;
-    while (temp2 > 0){
-        digit = temp2 % 10;
-        temp2 = temp2 / 10;
-        diff2 = larg - digit;
-        if ((diff2 != 0) && (diff2 < diff)){
-            diff = diff2;
-            larg2 = digit;
-        }
-    }
+    } 
+    return max;
+}
 
-    if (diff == 19){
-        printf("No Second Largest");
+int sec_digit(int n){
+    int sec_max = -1;
+    int max = max_digit(n);
+    while (n > 0){
+        int x = n % 10;
+        n = n / 10;
+        if (x > sec_max && x != max){
+            sec_max = x;
+        }   
+    }
+    if (sec_max == max || sec_max == -1){
+        return 100;
     }
     else{
-        printf("Second Largest number = %d\n", larg2);
+        return sec_max;
+    }
+}
+
+int main(void)
+{
+    int num;
+    printf("Number: ");
+    scanf("%d",&num);
+    int sec = sec_digit(num);
+    if (sec == 100){
+        printf("No sec larg");
+    }
+    else{
+        printf("%d", sec);
     }
     return 0;
 }
