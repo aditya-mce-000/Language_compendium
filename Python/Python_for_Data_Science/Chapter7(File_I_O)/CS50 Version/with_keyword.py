@@ -1,0 +1,9 @@
+# with open('names.txt','a') as file:#auto close
+#     name = (input('Name: ')).title()
+#     file.write(f"{name}\n")
+
+with open('names.txt','r') as file:
+    names = file.readlines()
+
+for name in names:
+    print(f"Hi, {name.rstrip()}")

@@ -17,3 +17,7 @@ int main()
     }
     return 0;
 }
+
+// l1 = []
+// l1.insert(0,4)
+// print(l1)
