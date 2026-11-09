@@ -1,8 +1,8 @@
-name = input('What is your name? ')
+# name = input('What is your name? ')
 
-file = open("names.txt", "w") # w (write) #open
-file.write(f'{name}\n')
-file.close()# closing
+# file = open("names.txt", "w") # w (write) #open
+# file.write(f'{name}\n')
+# file.close()# closing
 
 
 name = input('What is your name? ')
