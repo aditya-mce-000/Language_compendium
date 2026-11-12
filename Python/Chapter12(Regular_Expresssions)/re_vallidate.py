@@ -4,7 +4,8 @@ email = input('Email: ')
 
 # if re.search('@',email):
 #     print('Valid')
-if re.search(r'.+@.+\..+',email):
+# if re.search(r'^[^@]+@+\.edu$',email):
+if re.search('.+@.+', email):# r.search('format to search', the variable or the string in ehich it is searching for the occurence)
     print('Valid')
 else:
     print('Invalid')
